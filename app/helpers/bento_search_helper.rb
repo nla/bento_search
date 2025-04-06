@@ -139,7 +139,9 @@ module BentoSearchHelper
   def bento_item_title(item)
     render :partial => "bento_search/item_title", :object => item, :as => 'item'
   end
-  deprecate :bento_item_title
+  deprecate :bento_item_title, deprecator: ActiveSupport::Deprecation.new("2.0", "bento_search")
+  # deprecate :bento_item_title, deprecator: "render :partial => \"bento_search/item_title\", :object => item, :as => 'item'"
+
 
   # pass in 0-based rails current collection counter and a BentoSearch::Results,
   # calculates a user-displayable result set index label.
