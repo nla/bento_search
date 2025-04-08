@@ -8,6 +8,6 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
 end
 
-gem 'rails', "~> 7.2.0"
+gem 'rails', "~> 8.0"
 
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 2.1"
